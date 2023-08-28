@@ -1,0 +1,370 @@
+/* Your app custom styles here */
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+  
+  .title-large {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(17%, -88%);
+  }
+  .page-content {
+    margin-top: 0;
+    padding-top: 40px;
+    background-image: url('../../public/icons/FondoMovil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.list-dividers-ios.links-list ul li {
+    background: RGB(0, 91, 193);
+
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 2px;
+    
+    color: white;
+    font-size: 16px;
+    font-family: "NuevaFuente", sans-serif;
+  }
+.block{
+    font-size: 16px;
+    font-family: "NuevaFuente", sans-serif; /* Cambia "NuevaFuente" por el nombre de la fuente que deseas usar */
+    text-align: justify;
+}
+.title-large .title-large-text {
+    font-size: 42px; /* Ajusta este valor según tus preferencias */
+    font-family: "Consolas", Monospace; /* Cambia "NuevaFuente" por el nombre de la fuente que deseas usar */
+  }
+
+/* TIC TAC TOE */
+.tic-tac-toe {
+  position: absolute;
+  transform: translate(-50%, 15%);
+  top: 50%;
+  left: 50%;
+}
+.board {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  transform: translate(0%, 100%);
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transform: translate(0%, 0%);
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide {
+  display: none;
+}
+
+/*Golpea Al Topo*/
+.grid {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.square {
+  height: 70px;
+  width: 70px;
+  border: solid black 1px;
+  margin-bottom: 10px;
+  transform: translate(20%, 80%);
+}
+
+.mole {
+	background-image: url("../../public/icons/mole.png");
+	background-size: cover;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.score-info {
+  font-size: 22px;
+  transform: translate(5%, -10%);
+}
+
+#score{
+  transform: translate(0%, -60%);
+}
+
+.time-info {
+  font-size: 22px;
+  transform: translate(0%, -10%);
+}
+#time-left{
+  transform: translate(0%, -60%);
+}
+
+#restart-btn{
+    height: 60px;
+    width: 200px;
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    transform: translate(0%, 100%);
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+.popup1 {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+  font-size: 9vmin;
+  text-align: center;
+}
+#play-again-button{
+  font-size: 0.8em;
+  padding: 0.59em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+  margin-top: -40px;
+}
+#puntos{
+  font-size: 1.1em;
+  transform: translate(0%, -76%);
+}
+#puntos1{
+  font-size: 1.1em;
+  transform: translate(0%, 30%);
+}
+
+/*Memoria*/
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0; /* Color de fondo por defecto */
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  background-color: transparent;
+}
+
+#score1 {
+  font-size: 24px;
+}
+
+.card.flipped.card-content-1 {
+  background-image: url('../../public/icons/cheeseburger.png');
+}
+.card.flipped.card-content-2 {
+  background-image: url('../../public/icons/ice-cream.png');
+}
+.card.flipped.card-content-3 {
+  background-image: url('../../public/icons/hotdog.png');
+}
+.card.flipped.card-content-4 {
+  background-image: url('../../public/icons/pizza.png');
+}
+.card.flipped.card-content-5 {
+  background-image: url('../../public/icons/milkshake.png');
+}
+.card.flipped.card-content-6 {
+  background-image: url('../../public/icons/fries.png');
+}
+.card.flipped.card-content-7 {
+  background-image: url('../../public/icons/donnut.png');
+}
+.card.flipped.card-content-8 {
+  background-image: url('../../public/icons/popcorn.png');
+}
+
+#puntos2{
+  font-size: 1.1em;
+  transform: translate(0%, 70%);
+  text-align: center;
+}
+#play-again-button1{
+  font-size: 0.65em;
+  padding: 0.59em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+  margin-top: 170px;
+}
+
+/*Imagenes Home*/
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alineación vertical en el centro */
+  align-items: center; /* Alineación horizontal en el centro */
+}
+
+ul.game-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 250px;
+  border: 3px solid #000;
+}
+
+/* Estilo para los iconos de los juegos */
+.game-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.tic-tac-toe-icon {
+  background-image: url('../../public/icons/logotictactoe1.png');
+  /* Agrega aquí cualquier estilo de fondo que desees */
+}
+
+.golpea-altopo-icon {
+  background-image: url('../../public/icons/topo1.png');
+  /* Agrega aquí cualquier estilo de fondo que desees */
+}
+
+.memoria-icon {
+  background-image: url('../../public/icons/cartasfondo1.png');
+  /* Agrega aquí cualquier estilo de fondo que desees */
+}
+
+ul.info1 {
+  margin-bottom: 20px;
+  width: 250px;
+  width: 100%;
+}
+
+/*Left Panel*/
+/* Estilo para el perfil de jugador */
+.profile-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.profile-info h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Estilo para las estadísticas y logros */
+.stats-section {
+  padding: 20px;
+}
+
+.stats-section h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.stats-section p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.stats-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stats-section li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.title1{
+  font-size: 6.8vmin;
+  padding-left: 20px;
+  color: #000000;
+}

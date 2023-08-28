@@ -1,0 +1,35 @@
+<template>
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">🚀Mejoras y Actualizaciones</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block block-strong inset">
+      <p>¡Conoce las últimas mejoras y emocionantes novedades en PlayBox!</p>
+      <p><span style="font-size: 19px;"><strong>✨Ultimas Actualizaciones✨</strong></span></p>
+      <p>1.¡Se añadió un Nuevo Juego "Golpea al Topo"!.<br/>
+      2.¡Nuevas animaciones en cada Juego!.<br/>
+      3.¡Se añadió un Nuevo Juego "Memoria"!.</p>
+      <p><span style="font-size: 19px;"><strong>🛠️Ultimas Mejoras🛠️</strong></span></p>
+      <p>1.Mayor mobilidad del ususario con botones de retroceso.<br/>
+      2.Colocación del Puntaje.<br/>
+      3.Se coloco botones de Restart para seguir con la diversión.<br/>
+      4.Se agregó instrucciones de cada juego.</p>
+    </div>
+  </div>
+</div>
+</template>
+<script>
+export default () => {
+  return $render;
+};
+</script>

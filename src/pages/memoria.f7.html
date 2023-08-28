@@ -1,0 +1,44 @@
+<template>
+    <html lang="en">
+      <head>
+        <script src="../js/memoria.js"></script>
+      </head>
+    <body>
+    </body>
+    <div class="page" data-name="about">
+      <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a href="#" class="link back">
+              <i class="icon icon-back"></i>
+              <span class="if-not-md">Back</span>
+            </a>
+          </div>
+          <div class="title">Memoria</div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="block">
+          <p style="text-align: center;">
+            <strong><span style="font-size: 25px;">¡Bienvenido al desafio de Memoria! </span></strong>
+            <br/>¿Estás listo para poner a prueba tu mente?
+          </p>
+          <div class="tic-tac-toe">
+            <div class="board">
+              <div id="game-board"></div>
+              <div id="score1"></div>
+            </div>
+            <button id="restart-btn">Restart</button>
+          </div>
+          <div id="result-section" class="popup" style="display: none;">
+            <p id="puntos2">
+              <span style="font-size: 40px;">🏆</span>¡Victoria! Completaste el Juego<span style="font-size: 40px;">🥳</span>
+            </p>
+            <button id="play-again-button1">Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </html>
+</template>

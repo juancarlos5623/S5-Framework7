@@ -1,0 +1,97 @@
+<template>
+  <div class="page" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-large">
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding"><span style="font-size: 24px;">🎮</span>PlayBox</div>
+        <div class="title-large">
+          <div class="title-large-text"><span style="font-size: 42px;">🎮</span>PlayBox</div>
+        </div>
+      </div>
+    </div>
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="block">
+        <p><br/><strong>¡Explora, Juega y Disfruta! </strong>Te damos la bienvenida a <strong>PLAYBOX</strong>, donde tus habilidades te llevarán a la victoria.</p>
+      </div>
+      <div class="block-title"><span style="font-size: 23px;"><strong>JUEGOS</strong></span></div>
+      <div class="list list-strong inset list-dividers-ios">
+        <ul class="game-list">
+          <li>
+            <a href="/tictactoe/" class="item-content item-link">
+              <div class="item-inner">
+                <div class="game-icon tic-tac-toe-icon"></div>
+                <div class="item-title"><span style="font-size: 19px;">Tic-Tac-Toe</span></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="game-list">
+          <li>
+            <a href="/golpeaaltopo/" class="item-content item-link">
+              <div class="item-inner">
+                <div class="game-icon golpea-altopo-icon"></div>
+                <div class="item-title"><span style="font-size: 19px;">Golpea Al Topo</span></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="game-list">
+          <li>
+            <a href="/memoria/" class="item-content item-link">
+              <div class="item-inner">
+                <div class="game-icon memoria-icon"></div>
+                <div class="item-title"><span style="font-size: 19px;">Memoria</span></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--
+      <div class="block-title">Modals</div>
+      <div class="block grid grid-cols-2 grid-gap">
+        <a href="#" class="button button-fill popup-open" data-popup="#my-popup">Popup</a>
+        <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
+      </div>
+      -->
+
+      <!--
+      <div class="block-title">Panels</div>
+      <div class="block grid grid-cols-2 grid-gap">
+        <a href="#" class="button button-fill panel-open" data-panel="left">Left Panel</a>
+      </div>
+      -->
+      <div class="block-title"><span style="font-size: 23px;"><strong>INFORMACION</strong></span></div>
+      <div class="list list-strong inset list-dividers-ios links-list">
+        <ul class="info1">
+          <li>
+            <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Instrucciones y Consejos</a>
+          </li>
+        </ul>
+        
+        <ul class="info1">
+          <li>
+            <a href="/load-something-that-doesnt-exist/">Mejoras y Actualizaciones</a>
+          </li>
+        </ul>
+        
+        <ul class="info1">
+          <li>
+            <a href="/request-and-load/user/123456/">Equipo de Diseño y Desarrollo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default () => {
+  return $render;
+}
+</script>

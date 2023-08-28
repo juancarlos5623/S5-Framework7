@@ -1,0 +1,112 @@
+<template>
+  <div class="page">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span>
+          </a>
+        </div>
+        <div class="title">📚Instrucciones y Consejos</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">JUEGO NUMERO 1</div>
+      <div class="block block-strong inset">
+        <p><span style="font-size: 19px;"><strong>Tic-Tac-Toe</strong></span></p>
+        <p>El juego "Tic Tac Toe" es un juego clásico en el que dos jugadores se turnan para colocar sus símbolos en un tablero de 3x3. 
+        El objetivo es ser el primero en completar una línea horizontal, vertical o diagonal con tres de tus símbolos.</p>
+        <p>¡Diviértete desafiando a tus amigos a una partida de "Tic-Tac-Toe"!</p>
+      </div>
+      <div class="block-title">JUEGO NUMERO 2</div>
+      <div class="block block-strong inset">
+        <p><span style="font-size: 19px;"><strong>Golpea Al Topo</strong></span></p>
+        <p>En el juego "Golpea al Topo", el topo aparecerá en diferentes agujeros y tendrás que golpearlo rápidamente antes de que se escondan nuevamente. 
+          ¡Cuidado con el topo que es muy rápidos y tienes tiempo limitado!</p>
+        <p>Demuestra tus reflejos y puntúa alto en "Golpea al Topo".</p>
+      </div>
+      <div class="block-title">JUEGO NUMERO 3</div>
+      <div class="block block-strong inset">
+        <p><span style="font-size: 19px;"><strong>Memoria</strong></span></p>
+        <p>El juego "Memoria" es un juego de cartas en el que debes emparejar cartas idénticas. Gira las cartas y encuentra las parejas en la menor cantidad de movimientos posible. 
+          Será un verdadero reto ¡Usa tu cerebro!</p>
+        <p>¡Mejora tu inteligencia y diviértete jugando "Memoria"!</p>
+      </div>
+      <div class="block block-strong inset">
+        <a href="#" class="button button-fill" @click=${openAlert}>Consejos para Ganar</a>
+      </div>
+    </div>
+  </div>
+</template>
+<style>
+  p {
+    margin: 10px 0;
+  }
+</style>
+<script>
+  export default function (props, { $f7, $on, $onBeforeMount, $onMounted, $onBeforeUnmount, $onUnmounted }) {
+    // Component Data
+    let name = 'Jimmy';
+    let age = 25;
+    let likes = ['Tennis', 'Chess', 'Football'];
+
+    // Component Methods
+    const openAlert = () => {
+    const messages = [
+      'Tic-Tac-Toe: "Controla el centro" Trata de ocupar el centro en el primer movimiento, ya que te brinda más oportunidades para formar líneas ganadoras.',
+      'Tic-Tac-Toe: "Crea amenazas dobles" Coloca tu ficha de manera que puedas amenazar dos posibles líneas ganadoras al mismo tiempo, lo que dificulta que tu oponente bloquee ambas.',
+      'Golpea al Topo: "Mantén la calma" Mantén la concentración y evita golpear demasiado rápido. Espera el momento adecuado para golpear al topo.',
+      'Golpea al Topo: "Golpea en el centro" Siempre apunta al centro de la casilla donde aparece el topo. Esto aumenta tus posibilidades de golpearlo.',
+      'Memoria: "Divide y conquista" Enfócate en grupos pequeños de cartas a la vez en lugar de intentar recordar todas al mismo tiempo.',
+      'Memoria: "Crea asociaciones" Asocia las cartas con imágenes o patrones familiares para recordarlas más fácilmente.',
+      'Consejo General: "Mantén la calma" Mantén la calma incluso si las cosas no van como esperabas. La paciencia y la concentración son clave de la victoria.',
+      'Consejo General: "Practica regularmente" Jugar regularmente mejora tus habilidades y concentracion para hallar la victoria.'
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    const randomMessage = messages[randomIndex];
+    $f7.dialog.alert(randomMessage, 'Consejo para Ganar');
+  }
+
+    // Lifecycle
+    $onBeforeMount(() => {
+      console.log('onBeforeMount');
+    });
+    $onMounted(() => {
+      console.log('onMounted');
+    });
+    $onBeforeUnmount(() => {
+      console.log('onBeforeUnmount');
+    });
+    $onUnmounted(() => {
+      console.log('onUnmounted');
+    });
+
+    // Page Events
+    $on('pageMounted', (e, page) => {
+      console.log('pageMounted', page);
+    });
+    $on('pageInit', (e, page) => {
+      console.log('pageInit', page);
+    });
+    $on('pageBeforeIn', (e, page) => {
+      console.log('pageBeforeIn', page);
+    });
+    $on('pageAfterIn', (e, page) => {
+      console.log('pageAfterIn', page);
+    });
+    $on('pageBeforeOut', (e, page) => {
+      console.log('pageBeforeOut', page);
+    });
+    $on('pageAfterOut', (e, page) => {
+      console.log('pageAfterOut', page);
+    });
+    $on('pageBeforeRemove', (e, page) => {
+      console.log('pageBeforeRemove', page);
+    });
+
+    // Return render function
+    return $render;
+  }
+</script>
